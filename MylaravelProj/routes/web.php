@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//test
+Route::view('/userview', 'userview');
