@@ -9,6 +9,11 @@ class UserController extends Controller
     //
     public function formSubmit(Request $req)
     {
-        print_r($req->input('email'));
+        $req->validate([
+            'email'=>"required | email",
+            'user'=>"required | max: 5"
+
+        ]);
+        print_r($req->input());
     }
 }
