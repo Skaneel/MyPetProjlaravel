@@ -18,3 +18,4 @@ Route::get('/', function () {
 Route::view('/userview', 'userview');
 Route::post('/usercontroller', 'UserController@formSubmit');
 
+Route::get('/user', "Userchecked@submit")->middleware('agechecker');
