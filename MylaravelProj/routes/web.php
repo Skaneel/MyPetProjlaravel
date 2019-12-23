@@ -22,3 +22,5 @@ Route::get('/user', "Userchecked@submit")->middleware('agechecker');
 
 Route::get('/db', "Users@checkDb");
 
+Route::get('list', "Companies@list");
+

@@ -14,12 +14,12 @@ class Users extends Controller
         // $user=DB::select('select * from useralextable');
         // print_r($user);
         // // echo "we are here";
-        
+
         // echo "query will be here";
 
-        $users=DB::table('useralextable')->count();
+        return $users=DB::table('useralextable')->count();
         // ->where('name', '777')
         // ->get();
-        print_r($users);
+        //print_r($users);
     }
 }

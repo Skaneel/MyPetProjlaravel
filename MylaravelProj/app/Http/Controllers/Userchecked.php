@@ -9,6 +9,6 @@ class Userchecked extends Controller
     //
     function submit()
     {
-       echo "\n My controller";
+        echo "\n My controller";
     }
 }
